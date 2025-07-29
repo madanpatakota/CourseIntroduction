@@ -1,0 +1,156 @@
+.final-commitment {
+  padding: 8rem 1.5rem;
+  background: linear-gradient(to right, #0d3056, #144164);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.slide-title {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  color: #ffe082;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.final-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Left Column: What We Assist */
+.final-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.final-column h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #ffdf5e;
+}
+
+.final-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.final-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.final-item img {
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+}
+
+.final-item span {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+/* Right Column: What We Expect */
+.final-expect-section {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #fff8e1, #ffe082);
+  border: 2px dashed #ff6f00;
+  border-radius: 16px;
+  padding: 2rem;
+  color: #000;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+
+.expect-icon-wrapper {
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+.expect-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff3e0;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(255, 111, 0, 0.5);
+}
+
+.expect-text-wrapper {
+  flex: 1;
+}
+
+.expect-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #d84315;
+  margin-bottom: 0.5rem;
+}
+
+.practice-line {
+  font-size: 1.25rem;
+  color: #4e342e;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.warning-text {
+  font-size: 1.1rem;
+  color: #bf360c;
+  font-weight: 500;
+}
+
+/* Floating icon effect */
+@keyframes floatIcon {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .final-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .final-expect-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .expect-icon-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .expect-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .expect-title {
+    font-size: 1.5rem;
+  }
+
+  .practice-line,
+  .warning-text {
+    font-size: 1rem;
+  }
+}
