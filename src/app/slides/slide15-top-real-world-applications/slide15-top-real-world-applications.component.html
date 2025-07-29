@@ -1,0 +1,22 @@
+<section class="apps-showcase-section py-5 bg-light" id="realApps" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold" data-aos="zoom-in">🚀 Real-World Apps Built with Angular + ASP.NET Core</h2>
+    <div class="row">
+      <!-- Category Cards -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-right" *ngFor="let cat of appCategories">
+        <div class="category-card p-4 shadow-sm h-100 rounded">
+          <div class="d-flex align-items-center mb-3">
+            <img [src]="cat.icon" alt="{{cat.title}}" class="category-icon me-3" />
+            <h5 class="mb-0 text-primary fw-semibold">{{cat.title}}</h5>
+          </div>
+          <ul class="list-unstyled mb-0">
+            <li *ngFor="let app of cat.apps">
+              🔗 <a [href]="app.link" target="_blank">{{app.name}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-slide-nav [currentSlide]="15"></app-slide-nav>
+</section>

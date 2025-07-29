@@ -25,6 +25,7 @@ import { Slide11CourseStructureComponent } from './slides/slide11-course-structu
 import { Slide12WhatYouCanDevelopComponent } from './slides/slide12-what-you-can-develop/slide12-what-you-can-develop.component';
 import { Slide13ChoosingTheRightComponent } from './slides/slide13-choosing-the-right/slide13-choosing-the-right.component';
 import { Slide14AtTheFinalComponent } from './slides/slide14-at-the-final/slide14-at-the-final.component';
+import { Slide15TopRealWorldApplicationsComponent } from './slides/slide15-top-real-world-applications/slide15-top-real-world-applications.component';
 
 
 // import { Slide09ProjectsComponent } from './slides/slide09-projects/slide09-projects.component';
@@ -64,7 +65,8 @@ import { Slide14AtTheFinalComponent } from './slides/slide14-at-the-final/slide1
     Slide11CourseStructureComponent,
     Slide12WhatYouCanDevelopComponent,
     Slide13ChoosingTheRightComponent,
-    Slide14AtTheFinalComponent
+    Slide14AtTheFinalComponent,
+    Slide15TopRealWorldApplicationsComponent
   ],
   imports: [
     BrowserModule,
