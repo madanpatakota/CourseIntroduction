@@ -1,0 +1,28 @@
+.slide {
+  height: 100vh;
+  background: linear-gradient(to right, #144164, #0d3056);
+  color: #fff;
+  padding: 40px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.card {
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h5 {
+  font-size: 1.25rem;
+  color: #144164;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #333;
+}

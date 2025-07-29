@@ -1,0 +1,9 @@
+<div class="slide-nav d-flex justify-content-between align-items-center position-absolute top-50 w-100 px-4">
+  <button class="btn btn-outline-light" (click)="goBack()" *ngIf="!isFirstSlide">
+    <i class="fas fa-arrow-left fa-2x"></i>
+  </button>
+
+  <button class="btn btn-outline-light ms-auto" (click)="goNext()" *ngIf="!isLastSlide">
+    <i class="fas fa-arrow-right fa-2x"></i>
+  </button>
+</div>

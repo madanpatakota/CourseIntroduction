@@ -1,17 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-import { AppRoutingModule } from './app.routing.module'
-import { AppComponent } from './app.component';
-import { NgChartsModule } from 'ng2-charts';
+import { RouterModule, Routes } from '@angular/router';
 
-// Shared Components
-import { SlideNavComponent } from './shared/slide-nav/slide-nav.component';
 
-// Slide Components
+// 🧩 Import all 25 slide components
 import { Slide01IntroComponent } from './slides/slide01-intro/slide01-intro.component';
-import { Slide02WhyCourseComponent } from './slides/slide02-why-course/slide02-why-course.component';
-import { Slide03WhoShouldJoinComponent } from './slides/slide03-who-should-join/slide03-who-should-join.component';
+ import { Slide02WhyCourseComponent } from './slides/slide02-why-course/slide02-why-course.component';
+ import { Slide03WhoShouldJoinComponent } from './slides/slide03-who-should-join/slide03-who-should-join.component';
  import { Slide04MarketAnalysisComponent } from './slides/slide04-market-analysis/slide04-market-analysis.component';
 // import { Slide05TechnologiesComponent } from './slides/slide05-technologies/slide05-technologies.component';
 // import { Slide06JobPortalStatsComponent } from './slides/slide06-job-portal-stats/slide06-job-portal-stats.component';
@@ -35,23 +29,15 @@ import { Slide03WhoShouldJoinComponent } from './slides/slide03-who-should-join/
 // import { Slide24SocialComponent } from './slides/slide24-social/slide24-social.component';
 // import { Slide25FinalComponent } from './slides/slide25-final/slide25-final.component';
 
+const routes: Routes = [
+  { path: '', redirectTo: 'slide-1', pathMatch: 'full' },
+  { path: 'slide-1', component: Slide01IntroComponent },
+  {path:  'slide-2', component: Slide02WhyCourseComponent },
+  {path:  'slide-3', component: Slide03WhoShouldJoinComponent },
+  {path: 'slide-4', component: Slide04MarketAnalysisComponent },
+];
 @NgModule({
-  declarations: [
-    AppComponent,
-    SlideNavComponent,
-    // All Slide Components
-    Slide01IntroComponent,
-    Slide02WhyCourseComponent,
-    Slide03WhoShouldJoinComponent,
-    Slide04MarketAnalysisComponent,
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule,
-    AppRoutingModule,
-    NgChartsModule  // ✅ FIXED 
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [RouterModule.forRoot(routes)  ],
+  exports: [RouterModule ]
 })
-export class AppModule { }
+export class AppRoutingModule {}
