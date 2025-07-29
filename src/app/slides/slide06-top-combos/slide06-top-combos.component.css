@@ -1,0 +1,78 @@
+.fullstack-combo-slide {
+  padding: 60px 30px;
+  background: linear-gradient(to right, #0d3056, #144164);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.slide-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.slide-heading span {
+  background-color: #ffffff22;
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.combo-table-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  margin-bottom: 40px;
+}
+.combo-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.combo-table th,
+.combo-table td {
+  border: 1px solid #ccc;
+  padding: 15px;
+  font-size: 1rem;
+  vertical-align: top;
+}
+.combo-table th {
+  background-color: #144164;
+  color: #fff;
+  text-align: left;
+}
+.combo-table td {
+  background: #f8f9fa;
+  color: #222;
+}
+
+.combo-conclusion {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: auto;
+  color: #144164;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.combo-conclusion h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.combo-conclusion p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .combo-table th, .combo-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .slide-heading {
+    font-size: 2rem;
+  }
+}

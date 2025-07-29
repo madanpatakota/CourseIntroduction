@@ -9,7 +9,6 @@ import { Slide03WhoShouldJoinComponent } from './slides/slide03-who-should-join/
 import { Slide04MarketAnalysisComponent } from './slides/slide04-market-analysis/slide04-market-analysis.component';
 
 import { Slide05WhyDotnetcoreAngularComponent } from './slides/slide05-why-dotnetcore-angular/slide05-why-dotnetcore-angular.component';
-import { Slide05WhyDotnetcoreWithAngularComponent } from './slides/slide05-why-dotnetcore-with-angular/slide05-why-dotnetcore-with-angular.component';
 import { Slide06TopCombosComponent } from './slides/slide06-top-combos/slide06-top-combos.component';
 import { Slide07TechnologiesComponent } from './slides/slide07-technologies/slide07-technologies.component';
 
