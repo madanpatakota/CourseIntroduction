@@ -1,67 +1,64 @@
-<section class="slide market-slide" data-aos="fade-up">
-  <!-- Heading -->
-  <h2 class="slide-heading" data-aos="zoom-in">
-    📊 Full-Stack Development <span>Market Analysis</span>
-  </h2>
+<section class="market-analysis-section py-5 bg-white" id="marketAnalysis" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" data-aos="zoom-in">📊 Full-Stack Development Market Analysis</h2>
 
-  <!-- Pie Chart Row -->
-  <div class="chart-row">
-    <div class="chart-box" data-aos="fade-right">
-      <div class="pie-chart"></div>
-    </div>
-    <div class="source-box" data-aos="fade-left">
-      <h4>Source:</h4>
-      <p>
-        <a href="https://survey.stackoverflow.co/2024/#developer-profile-roles" target="_blank">
-          Stack Overflow Survey 2024
-        </a>
-      </p>
-      <ul>
-        <li>🧱 Full-Stack Developer: 30.7%</li>
-        <li>⚙️ DevOps Engineer: 12.1%</li>
-        <li>📦 Data Engineer: 1.9%</li>
-        <li>🌐 Others: 55.3%</li>
-      </ul>
-    </div>
-  </div>
+    <div class="row g-4">
+      <!-- Developer Share -->
+      <div class="col-md-6" data-aos="fade-right">
+        <h5 class="fw-bold mb-4 text-primary">🔍 Developer Market Share (Stack Overflow 2024)</h5>
+        <div class="bar-block">
+          <label>🧱 Full-Stack Developer <span class="percent-label">30.7%</span></label>
+          <div class="bar"><div class="fill bg-primary" style="width: 30.7%;"></div></div>
 
-  <!-- Info Grid -->
-  <div class="info-grid">
-    <div class="info-box" data-aos="fade-up" data-aos-delay="100">
-      <h4>📈 Job Openings on Top Portals</h4>
-      <ul>
-        <li><a href="https://www.naukri.com/full-stack-developer-jobs" target="_blank">Naukri – 50,000+ Jobs</a></li>
-        <li><a href="https://www.linkedin.com/jobs/full-stack-developer-jobs/" target="_blank">LinkedIn – 75,000+ Openings</a></li>
-        <li><a href="https://www.indeed.com/q-Full-Stack-Developer-jobs.html" target="_blank">Indeed – Global Demand</a></li>
-      </ul>
-    </div>
+          <label>⚙️ DevOps Engineer <span class="percent-label">12.1%</span></label>
+          <div class="bar"><div class="fill bg-success" style="width: 12.1%;"></div></div>
 
-    <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-      <h4>🌍 Global Hiring Trends</h4>
-      <p>US, Germany, Canada, Australia hiring full-stack developers for hybrid and remote roles with 2x–3x salary growth. Remote opportunities up 42% YoY.</p>
-    </div>
+          <label>📦 Data Engineer <span class="percent-label">1.9%</span></label>
+          <div class="bar"><div class="fill bg-warning" style="width: 1.9%;"></div></div>
 
-    <div class="info-box" data-aos="fade-up" data-aos-delay="300">
-      <h4>💰 Salary Insights (India)</h4>
-      <ul>
-        <li>👶 Fresher: ₹4–6 LPA</li>
-        <li>👨‍💻 2–4 Years: ₹8–12 LPA</li>
-        <li>👨‍🏫 5+ Years: ₹18–28 LPA</li>
-      </ul>
-    </div>
+          <label>🧪 QA Engineer <span class="percent-label">10%</span></label>
+          <div class="bar"><div class="fill bg-info" style="width: 10%;"></div></div>
 
-    <div class="info-box" data-aos="fade-up" data-aos-delay="400">
-      <h4>⭐ Developer Popularity</h4>
-      <div class="survey-stars">
-        <i class="fas fa-star full"></i>
-        <i class="fas fa-star full"></i>
-        <i class="fas fa-star full"></i>
-        <i class="fas fa-star full"></i>
-        <i class="fas fa-star-half-alt full"></i>
+          <label>🧠 SAP Consultant <span class="percent-label">8.5%</span></label>
+          <div class="bar"><div class="fill bg-dark" style="width: 8.5%;"></div></div>
+
+          <label>📘 Workday Specialist <span class="percent-label">6.2%</span></label>
+          <div class="bar"><div class="fill bg-secondary" style="width: 6.2%;"></div></div>
+
+          <label>❄️ Snowflake Developer <span class="percent-label">5.3%</span></label>
+          <div class="bar"><div class="fill bg-danger" style="width: 5.3%;"></div></div>
+        </div>
+
+        <p class="text-muted mt-3">⭐ Rated <strong>4.8/5</strong> by developers worldwide</p>
       </div>
-      <p class="popularity-text">Rated 4.8/5 by developers globally</p>
+
+      <!-- Other Insights -->
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="info-box mb-4">
+          <h5 class="fw-bold text-success">💼 Job Openings</h5>
+          <ul>
+            <li>📍 Naukri – <strong>50,000+</strong> Jobs</li>
+            <li>📍 LinkedIn – <strong>75,000+</strong> Openings</li>
+            <li>📍 Indeed – <strong>Global Demand</strong></li>
+          </ul>
+        </div>
+
+        <div class="info-box mb-4">
+          <h5 class="fw-bold text-warning">🌍 Global Hiring Trends</h5>
+          <p>US, Germany, Canada, Australia hiring full-stack developers for hybrid and remote roles.</p>
+          <p class="mb-0"><strong>Remote opportunities up 42% YoY</strong></p>
+        </div>
+
+        <div class="info-box">
+          <h5 class="fw-bold text-danger">💰 Salary Insights (India)</h5>
+          <ul>
+            <li>👶 Fresher: ₹4–6 LPA</li>
+            <li>👨‍💻 2–4 Years: ₹8–12 LPA</li>
+            <li>👨‍🏫 5+ Years: ₹18–28 LPA</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-
   <app-slide-nav [currentSlide]="4"></app-slide-nav>
 </section>
