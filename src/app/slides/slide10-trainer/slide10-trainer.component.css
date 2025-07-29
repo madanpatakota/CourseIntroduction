@@ -1,0 +1,55 @@
+.trainer-slide {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0d3056, #144164);
+  color: #ffffff;
+  padding: 60px 20px;
+  overflow-y: auto;
+}
+
+.slide-heading {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.trainer-image {
+  max-width: 260px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.trainer-intro {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.trainer-slide p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.trainer-slide a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.trainer-slide a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .trainer-slide {
+    text-align: center;
+  }
+
+  .trainer-image {
+    margin-bottom: 30px;
+  }
+
+  .slide-heading {
+    font-size: 2rem;
+  }
+}

@@ -18,6 +18,7 @@ import { Slide06TopCombosComponent } from './slides/slide06-top-combos/slide06-t
 import { Slide07TechnologiesComponent } from './slides/slide07-technologies/slide07-technologies.component';
  import { Slide08JobPortalStatsComponent } from './slides/slide08-job-portal-stats/slide08-job-portal-stats.component';
 import { Slide09HighlightsComponent } from './slides/slide09-highlights/slide09-highlights.component';
+import { Slide10TrainerComponent } from './slides/slide10-trainer/slide10-trainer.component';
 // import { Slide07HighlightsComponent } from './slides/slide07-highlights/slide07-highlights.component';
 // import { Slide08TrainerComponent } from './slides/slide08-trainer/slide08-trainer.component';
 // import { Slide09ProjectsComponent } from './slides/slide09-projects/slide09-projects.component';
@@ -51,7 +52,8 @@ import { Slide09HighlightsComponent } from './slides/slide09-highlights/slide09-
     Slide06TopCombosComponent,
     Slide07TechnologiesComponent,
     Slide08JobPortalStatsComponent,
-    Slide09HighlightsComponent
+    Slide09HighlightsComponent,
+    Slide10TrainerComponent
   ],
   imports: [
     BrowserModule,

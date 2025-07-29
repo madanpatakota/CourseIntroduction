@@ -13,10 +13,8 @@ import { Slide06TopCombosComponent } from './slides/slide06-top-combos/slide06-t
 import { Slide07TechnologiesComponent } from './slides/slide07-technologies/slide07-technologies.component';
 import { Slide08JobPortalStatsComponent } from './slides/slide08-job-portal-stats/slide08-job-portal-stats.component';
 import { Slide09HighlightsComponent } from './slides/slide09-highlights/slide09-highlights.component';
+import { Slide10TrainerComponent } from './slides/slide10-trainer/slide10-trainer.component';
 
-// import { Slide05TechnologiesComponent } from './slides/slide05-technologies/slide05-technologies.component';
-// import { Slide06JobPortalStatsComponent } from './slides/slide06-job-portal-stats/slide06-job-portal-stats.component';
-// import { Slide07HighlightsComponent } from './slides/slide07-highlights/slide07-highlights.component';
 // import { Slide08TrainerComponent } from './slides/slide08-trainer/slide08-trainer.component';
 // import { Slide09ProjectsComponent } from './slides/slide09-projects/slide09-projects.component';
 // import { Slide10CareerPathComponent } from './slides/slide10-career-path/slide10-career-path.component';
@@ -47,6 +45,7 @@ const routes: Routes = [
   { path: 'slide-7', component: Slide07TechnologiesComponent },
   { path: 'slide-8', component: Slide08JobPortalStatsComponent },
   { path: 'slide-9', component: Slide09HighlightsComponent },
+  { path: 'slide-10', component: Slide10TrainerComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
