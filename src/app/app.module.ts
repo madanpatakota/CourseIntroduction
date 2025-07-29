@@ -22,9 +22,9 @@ import { Slide10TrainerComponent } from './slides/slide10-trainer/slide10-traine
 
 
 import { Slide11CourseStructureComponent } from './slides/slide11-course-structure/slide11-course-structure.component';
-// import { Slide12InterviewComponent } from './slides/slide12-interview/slide12
-// import { Slide07HighlightsComponent } from './slides/slide07-highlights/slide07-highlights.component';
-// import { Slide08TrainerComponent } from './slides/slide08-trainer/slide08-trainer.component';
+import { Slide12WhatYouCanDevelopComponent } from './slides/slide12-what-you-can-develop/slide12-what-you-can-develop.component';
+
+
 // import { Slide09ProjectsComponent } from './slides/slide09-projects/slide09-projects.component';
 // import { Slide10CareerPathComponent } from './slides/slide10-career-path/slide10-career-path.component';
 // import { Slide11InterviewComponent } from './slides/slide11-interview/slide11-interview.component';
@@ -60,6 +60,7 @@ import { Slide11CourseStructureComponent } from './slides/slide11-course-structu
     Slide10TrainerComponent,
 
     Slide11CourseStructureComponent,
+    Slide12WhatYouCanDevelopComponent
   ],
   imports: [
     BrowserModule,

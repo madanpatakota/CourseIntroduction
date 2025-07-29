@@ -15,6 +15,7 @@ import { Slide08JobPortalStatsComponent } from './slides/slide08-job-portal-stat
 import { Slide09HighlightsComponent } from './slides/slide09-highlights/slide09-highlights.component';
 import { Slide10TrainerComponent } from './slides/slide10-trainer/slide10-trainer.component';
 import { Slide11CourseStructureComponent } from './slides/slide11-course-structure/slide11-course-structure.component';
+import { Slide12WhatYouCanDevelopComponent } from './slides/slide12-what-you-can-develop/slide12-what-you-can-develop.component';
 
 // import { Slide09ProjectsComponent } from './slides/slide09-projects/slide09-projects.component';
 // import { Slide10CareerPathComponent } from './slides/slide10-career-path/slide10-career-path.component';
@@ -47,6 +48,7 @@ const routes: Routes = [
   { path: 'slide-9', component: Slide09HighlightsComponent },
   { path: 'slide-10', component: Slide10TrainerComponent },
   {path: 'slide-11', component: Slide11CourseStructureComponent },
+  {path: 'slide-12', component: Slide12WhatYouCanDevelopComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
