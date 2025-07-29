@@ -13,6 +13,9 @@ import { Slide01IntroComponent } from './slides/slide01-intro/slide01-intro.comp
 import { Slide02WhyCourseComponent } from './slides/slide02-why-course/slide02-why-course.component';
 import { Slide03WhoShouldJoinComponent } from './slides/slide03-who-should-join/slide03-who-should-join.component';
  import { Slide04MarketAnalysisComponent } from './slides/slide04-market-analysis/slide04-market-analysis.component';
+import { Slide05WhyDotnetcoreAngularComponent } from './slides/slide05-why-dotnetcore-angular/slide05-why-dotnetcore-angular.component';
+import { Slide06TopCombosComponent } from './slides/slide06-top-combos/slide06-top-combos.component';
+import { Slide07TechnologiesComponent } from './slides/slide07-technologies/slide07-technologies.component';
 // import { Slide05TechnologiesComponent } from './slides/slide05-technologies/slide05-technologies.component';
 // import { Slide06JobPortalStatsComponent } from './slides/slide06-job-portal-stats/slide06-job-portal-stats.component';
 // import { Slide07HighlightsComponent } from './slides/slide07-highlights/slide07-highlights.component';
@@ -44,6 +47,9 @@ import { Slide03WhoShouldJoinComponent } from './slides/slide03-who-should-join/
     Slide02WhyCourseComponent,
     Slide03WhoShouldJoinComponent,
     Slide04MarketAnalysisComponent,
+    Slide05WhyDotnetcoreAngularComponent,
+    Slide06TopCombosComponent,
+    Slide07TechnologiesComponent,
   ],
   imports: [
     BrowserModule,

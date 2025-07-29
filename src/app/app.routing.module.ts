@@ -4,9 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 // 🧩 Import all 25 slide components
 import { Slide01IntroComponent } from './slides/slide01-intro/slide01-intro.component';
- import { Slide02WhyCourseComponent } from './slides/slide02-why-course/slide02-why-course.component';
- import { Slide03WhoShouldJoinComponent } from './slides/slide03-who-should-join/slide03-who-should-join.component';
- import { Slide04MarketAnalysisComponent } from './slides/slide04-market-analysis/slide04-market-analysis.component';
+import { Slide02WhyCourseComponent } from './slides/slide02-why-course/slide02-why-course.component';
+import { Slide03WhoShouldJoinComponent } from './slides/slide03-who-should-join/slide03-who-should-join.component';
+import { Slide04MarketAnalysisComponent } from './slides/slide04-market-analysis/slide04-market-analysis.component';
+
+import { Slide05WhyDotnetcoreAngularComponent } from './slides/slide05-why-dotnetcore-angular/slide05-why-dotnetcore-angular.component';
+import { Slide05WhyDotnetcoreWithAngularComponent } from './slides/slide05-why-dotnetcore-with-angular/slide05-why-dotnetcore-with-angular.component';
+import { Slide06TopCombosComponent } from './slides/slide06-top-combos/slide06-top-combos.component';
+import { Slide07TechnologiesComponent } from './slides/slide07-technologies/slide07-technologies.component';
+
 // import { Slide05TechnologiesComponent } from './slides/slide05-technologies/slide05-technologies.component';
 // import { Slide06JobPortalStatsComponent } from './slides/slide06-job-portal-stats/slide06-job-portal-stats.component';
 // import { Slide07HighlightsComponent } from './slides/slide07-highlights/slide07-highlights.component';
@@ -32,12 +38,15 @@ import { Slide01IntroComponent } from './slides/slide01-intro/slide01-intro.comp
 const routes: Routes = [
   { path: '', redirectTo: 'slide-1', pathMatch: 'full' },
   { path: 'slide-1', component: Slide01IntroComponent },
-  {path:  'slide-2', component: Slide02WhyCourseComponent },
-  {path:  'slide-3', component: Slide03WhoShouldJoinComponent },
-  {path: 'slide-4', component: Slide04MarketAnalysisComponent },
+  { path: 'slide-2', component: Slide02WhyCourseComponent },
+  { path: 'slide-3', component: Slide03WhoShouldJoinComponent },
+  { path: 'slide-4', component: Slide04MarketAnalysisComponent },
+  { path: 'slide-5', component: Slide05WhyDotnetcoreAngularComponent },
+  { path: 'slide-6', component: Slide06TopCombosComponent },
+  { path: 'slide-7', component: Slide07TechnologiesComponent },
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)  ],
-  exports: [RouterModule ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
