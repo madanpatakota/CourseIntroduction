@@ -1,0 +1,94 @@
+.job-portal-stats-slide {
+  padding: 60px 30px;
+  background: linear-gradient(to right, #0d3056, #144164);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.slide-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.slide-heading span {
+  background-color: #ffffff22;
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.portal-stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.portal-card {
+  background: #ffffff;
+  color: #144164;
+  padding: 25px;
+  width: 300px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.portal-card:hover {
+  transform: translateY(-10px);
+}
+.portal-icon {
+  height: 70px;
+  margin-bottom: 15px;
+}
+.portal-card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.portal-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.portal-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #144164;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.portal-link:hover {
+  background: #0d3056;
+}
+
+.portal-summary {
+  background: #ffffff;
+  color: #144164;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.portal-summary h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.portal-summary p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .portal-card {
+    width: 100%;
+  }
+  .slide-heading {
+    font-size: 2rem;
+  }
+}

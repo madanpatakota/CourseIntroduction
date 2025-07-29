@@ -11,6 +11,8 @@ import { Slide04MarketAnalysisComponent } from './slides/slide04-market-analysis
 import { Slide05WhyDotnetcoreAngularComponent } from './slides/slide05-why-dotnetcore-angular/slide05-why-dotnetcore-angular.component';
 import { Slide06TopCombosComponent } from './slides/slide06-top-combos/slide06-top-combos.component';
 import { Slide07TechnologiesComponent } from './slides/slide07-technologies/slide07-technologies.component';
+import { Slide08JobPortalStatsComponent } from './slides/slide08-job-portal-stats/slide08-job-portal-stats.component';
+import { Slide09HighlightsComponent } from './slides/slide09-highlights/slide09-highlights.component';
 
 // import { Slide05TechnologiesComponent } from './slides/slide05-technologies/slide05-technologies.component';
 // import { Slide06JobPortalStatsComponent } from './slides/slide06-job-portal-stats/slide06-job-portal-stats.component';
@@ -43,6 +45,8 @@ const routes: Routes = [
   { path: 'slide-5', component: Slide05WhyDotnetcoreAngularComponent },
   { path: 'slide-6', component: Slide06TopCombosComponent },
   { path: 'slide-7', component: Slide07TechnologiesComponent },
+  { path: 'slide-8', component: Slide08JobPortalStatsComponent },
+  { path: 'slide-9', component: Slide09HighlightsComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
