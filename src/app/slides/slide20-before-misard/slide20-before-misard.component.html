@@ -1,33 +1,49 @@
-<!-- before-after.component.html -->
-<div class="container py-5">
-  <h2 class="text-center fw-bold mb-5" style="color: #144264;">📈 Before vs After Misard</h2>
-  <div class="row g-4 text-white">
-    <div class="col-md-6" data-aos="slide-right">
-      <div class="card h-100 shadow-lg border-0" style="background-color: #d9534f;">
-        <div class="card-body">
-          <h4 class="card-title text-white fw-bold mb-3"><i class="bi bi-x-circle-fill me-2"></i>Before Joining</h4>
-          <ul class="list-group list-group-flush fs-5">
-            <li class="list-group-item bg-transparent text-white border-0">❌ No real project</li>
-            <li class="list-group-item bg-transparent text-white border-0">❌ No GitHub</li>
-            <li class="list-group-item bg-transparent text-white border-0">❓ Confused in tech</li>
-            <li class="list-group-item bg-transparent text-white border-0">💸 Low salary offers</li>
-          </ul>
+<div class="before-after-section py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">📈 Before vs After Misard</h2>
+    <div class="row g-4 justify-content-center" style="margin-bottom: 300px">
+      <!-- Before Card -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card comparison-card bg-danger text-white h-100 shadow-lg border-0">
+          <div class="card-body">
+            <h4 class="card-title fw-bold mb-3"><i class="bi bi-x-circle-fill me-2"></i>Before Joining</h4>
+            <ul class="list-group list-group-flush fs-6">
+              <li class="list-group-item bg-transparent border-0">❌ No real project experience</li>
+              <li class="list-group-item bg-transparent border-0">❌ No GitHub or version control</li>
+              <li class="list-group-item bg-transparent border-0">❓ Unclear about career direction</li>
+              <li class="list-group-item bg-transparent border-0">🧩 No exposure to client tasks</li>
+              <li class="list-group-item bg-transparent border-0">🔕 Weak communication skills</li>
+              <li class="list-group-item bg-transparent border-0">💸 Low or no package offers</li>
+              <li class="list-group-item bg-transparent border-0">⛔ No cloud deployment knowledge</li>
+              <li class="list-group-item bg-transparent border-0">❌ Resume lacks projects</li>
+              <li class="list-group-item bg-transparent border-0">😞 Nervous in interviews</li>
+              <li class="list-group-item bg-transparent border-0">🐢 No mentor or guidance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- After Card -->
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card comparison-card text-white h-100 shadow-lg border-0" style="background-color: #144264;">
+          <div class="card-body">
+            <h4 class="card-title text-warning fw-bold mb-3"><i class="bi bi-check-circle-fill me-2"></i>After Misard</h4>
+            <ul class="list-group list-group-flush fs-6">
+              <li class="list-group-item bg-transparent border-0">✅ Built 2–3 real full-stack apps</li>
+              <li class="list-group-item bg-transparent border-0">✅ 20+ GitHub commits with structure</li>
+              <li class="list-group-item bg-transparent border-0">✅ Crystal-clear career roadmap</li>
+              <li class="list-group-item bg-transparent border-0">✅ Real client-style task exposure</li>
+              <li class="list-group-item bg-transparent border-0">✅ Daily standups and grooming sessions</li>
+              <li class="list-group-item bg-transparent border-0">💼 ₹6–18 LPA job opportunities</li>
+              <li class="list-group-item bg-transparent border-0">✅ Azure/GitHub Actions deployment</li>
+              <li class="list-group-item bg-transparent border-0">✅ Resume with projects, links, GitHub</li>
+              <li class="list-group-item bg-transparent border-0">🚀 Mock interviews + real-time prep</li>
+              <li class="list-group-item bg-transparent border-0">🙌 Lifelong mentorship access</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-6" data-aos="slide-left">
-      <div class="card h-100 shadow-lg border-0" style="background-color: #144264;">
-        <div class="card-body">
-          <h4 class="card-title text-warning fw-bold mb-3"><i class="bi bi-check-circle-fill me-2"></i>After Misard</h4>
-          <ul class="list-group list-group-flush fs-5">
-            <li class="list-group-item bg-transparent text-white border-0">✅ Real full-stack apps</li>
-            <li class="list-group-item bg-transparent text-white border-0">✅ 20+ Git commits</li>
-            <li class="list-group-item bg-transparent text-white border-0">✅ Career roadmap</li>
-            <li class="list-group-item bg-transparent text-white border-0">💼 ₹6–18 LPA offers</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <app-slide-nav [backRoute]="'slide-8'" [FrontRoute]="'slide-10'"></app-slide-nav>
   </div>
-  <app-slide-nav  [backRoute]="'slide-8'" [FrontRoute]="'slide-10'"></app-slide-nav>
 </div>
