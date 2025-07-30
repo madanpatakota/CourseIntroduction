@@ -19,6 +19,7 @@ import { Slide12WhatYouCanDevelopComponent } from './slides/slide12-what-you-can
 import { Slide13ChoosingTheRightComponent } from './slides/slide13-choosing-the-right/slide13-choosing-the-right.component';
 import { Slide14AtTheFinalComponent } from './slides/slide14-at-the-final/slide14-at-the-final.component';
 import { Slide15TopRealWorldApplicationsComponent } from './slides/slide15-top-real-world-applications/slide15-top-real-world-applications.component';
+import { Slide16SlideCareerPathComponent } from './slides/slide16-slide-career-path/slide16-slide-career-path.component';
 
 // import { Slide09ProjectsComponent } from './slides/slide09-projects/slide09-projects.component';
 // import { Slide10CareerPathComponent } from './slides/slide10-career-path/slide10-career-path.component';
@@ -38,23 +39,44 @@ import { Slide15TopRealWorldApplicationsComponent } from './slides/slide15-top-r
 // import { Slide24SocialComponent } from './slides/slide24-social/slide24-social.component';
 // import { Slide25FinalComponent } from './slides/slide25-final/slide25-final.component';
 
+// const routes: Routes = [
+//   { path: '', redirectTo: 'slide-1', pathMatch: 'full' },
+//   { path: 'slide-1', component: Slide01IntroComponent },
+//   { path: 'slide-2', component: Slide02WhyCourseComponent },
+//   { path: 'slide-3', component: Slide03WhoShouldJoinComponent },
+//   { path: 'slide-4', component: Slide04MarketAnalysisComponent },
+//   { path: 'slide-5', component: Slide05WhyDotnetcoreAngularComponent },
+//   { path: 'slide-6', component: Slide06TopCombosComponent },
+//   { path: 'slide-7', component: Slide07TechnologiesComponent },
+//   { path: 'slide-8', component: Slide08JobPortalStatsComponent },
+//   { path: 'slide-9', component: Slide09HighlightsComponent },
+//   { path: 'slide-10', component: Slide10TrainerComponent },
+//   {path: 'slide-11', component: Slide11CourseStructureComponent },
+//   {path: 'slide-12', component: Slide12WhatYouCanDevelopComponent },
+//   { path: 'slide-13', component: Slide13ChoosingTheRightComponent },
+//   {path: 'slide-14', component: Slide14AtTheFinalComponent },
+//   {path: 'slide-15', component: Slide15TopRealWorldApplicationsComponent },
+// ];
+
 const routes: Routes = [
   { path: '', redirectTo: 'slide-1', pathMatch: 'full' },
-  { path: 'slide-1', component: Slide01IntroComponent },
-  { path: 'slide-2', component: Slide02WhyCourseComponent },
-  { path: 'slide-3', component: Slide03WhoShouldJoinComponent },
-  { path: 'slide-4', component: Slide04MarketAnalysisComponent },
-  { path: 'slide-5', component: Slide05WhyDotnetcoreAngularComponent },
-  { path: 'slide-6', component: Slide06TopCombosComponent },
+  { path: 'slide-1', component: Slide01IntroComponent },    // Done
+  { path: 'slide-2', component: Slide02WhyCourseComponent },  // Done
+  { path: 'slide-3', component: Slide04MarketAnalysisComponent }, // Done
+  { path: 'slide-4', component: Slide05WhyDotnetcoreAngularComponent }, // Done
+  { path: 'slide-5', component: Slide06TopCombosComponent },  // Done
+
+  { path: 'slide-6', component: Slide15TopRealWorldApplicationsComponent },
   { path: 'slide-7', component: Slide07TechnologiesComponent },
   { path: 'slide-8', component: Slide08JobPortalStatsComponent },
-  { path: 'slide-9', component: Slide09HighlightsComponent },
-  { path: 'slide-10', component: Slide10TrainerComponent },
+  { path: 'slide-9', component: Slide13ChoosingTheRightComponent },
+  { path: 'slide-10', component: Slide12WhatYouCanDevelopComponent },
   {path: 'slide-11', component: Slide11CourseStructureComponent },
-  {path: 'slide-12', component: Slide12WhatYouCanDevelopComponent },
-  { path: 'slide-13', component: Slide13ChoosingTheRightComponent },
+  {path: 'slide-12', component: Slide10TrainerComponent },
+  { path: 'slide-13', component: Slide09HighlightsComponent },
   {path: 'slide-14', component: Slide14AtTheFinalComponent },
-  {path: 'slide-15', component: Slide15TopRealWorldApplicationsComponent },
+  {path: 'slide-15', component: Slide03WhoShouldJoinComponent },
+  { path: 'slide-16', component: Slide16SlideCareerPathComponent }, // Placeholder for future slides
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
