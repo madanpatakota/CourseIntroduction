@@ -4,6 +4,13 @@
   text-align: center;
 }
 
+.develop-section .container {
+  max-height: 2000px;
+  margin: 0 auto;
+  margin-bottom: 800px !important; /* ✅ this will force it to work */
+}
+
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
