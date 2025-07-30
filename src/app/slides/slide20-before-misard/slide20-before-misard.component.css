@@ -1,0 +1,64 @@
+/* before-after.component.scss */
+
+:host {
+  display: block;
+  background-color: #f0f6ff;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  color: #144264;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4px;
+}
+
+.card {
+  border-radius: 16px;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(20, 66, 100, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(20, 66, 100, 0.25);
+}
+
+.card-title {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-title i {
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+}
+
+.list-group-item {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding-left: 1.5rem;
+  border: none;
+}
+
+.list-group-item::before {
+  content: "•";
+  color: #f9a826;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .list-group-item {
+    font-size: 1rem;
+  }
+}

@@ -22,6 +22,11 @@ import { Slide15TopRealWorldApplicationsComponent } from './slides/slide15-top-r
 import { Slide16SlideCareerPathComponent } from './slides/slide16-slide-career-path/slide16-slide-career-path.component';
 import { Slide17WhatCanYouBuildAfterCourseComponent } from './slides/slide17-what-can-you-build-after-course/slide17-what-can-you-build-after-course.component';
 import { Slide18RealTimeProjectsYouWillWorkOnComponent } from './slides/slide18-real-time-projects-you-will-work-on/slide18-real-time-projects-you-will-work-on.component';
+import { Slide19TopIqsStudentsComponent } from './slides/slide19-top-iqs-students/slide19-top-iqs-students.component';
+import { Slide20BeforeMisardComponent } from './slides/slide20-before-misard/slide20-before-misard.component';
+import { Slide21StudetReviewsComponent } from './slides/slide21-studet-reviews/slide21-studet-reviews.component';
+import { Slide22LiveProjectsComponent } from './slides/slide22-live-projects/slide22-live-projects.component';
+import { Slide23InternshipComponent } from './slides/slide23-internship/slide23-internship.component';
 
 // import { Slide09ProjectsComponent } from './slides/slide09-projects/slide09-projects.component';
 // import { Slide10CareerPathComponent } from './slides/slide10-career-path/slide10-career-path.component';
@@ -64,23 +69,33 @@ const routes: Routes = [
   { path: '', redirectTo: 'slide-1', pathMatch: 'full' },
   { path: 'slide-1', component: Slide01IntroComponent },    // Done
   { path: 'slide-2', component: Slide02WhyCourseComponent },  // Done
-  { path: 'slide-3', component: Slide04MarketAnalysisComponent }, // Done
-  { path: 'slide-4', component: Slide05WhyDotnetcoreAngularComponent }, // Done
-  { path: 'slide-5', component: Slide06TopCombosComponent },  // Done
+  { path: 'slide-3', component: Slide03WhoShouldJoinComponent }, // Done
 
-  { path: 'slide-6', component: Slide15TopRealWorldApplicationsComponent },
-  { path: 'slide-7', component: Slide07TechnologiesComponent },
-  { path: 'slide-8', component: Slide08JobPortalStatsComponent },
-  { path: 'slide-9', component: Slide13ChoosingTheRightComponent },
-  { path: 'slide-10', component: Slide12WhatYouCanDevelopComponent },
-  {path: 'slide-11', component: Slide11CourseStructureComponent },
-  {path: 'slide-12', component: Slide10TrainerComponent },
-  { path: 'slide-13', component: Slide09HighlightsComponent },
-  {path: 'slide-14', component: Slide14AtTheFinalComponent },
-  {path: 'slide-15', component: Slide03WhoShouldJoinComponent },
-  { path: 'slide-16', component: Slide16SlideCareerPathComponent }, // Placeholder for future slides
-  {path:'slide-17', component: Slide17WhatCanYouBuildAfterCourseComponent }, // Placeholder for future slides
-  {path:'slide-18',component:Slide18RealTimeProjectsYouWillWorkOnComponent}
+  { path: 'slide-4', component: Slide04MarketAnalysisComponent }, // Done
+  { path: 'slide-5', component: Slide08JobPortalStatsComponent }, // Done
+  { path: 'slide-6', component: Slide06TopCombosComponent }, // Done
+  { path: 'slide-7', component: Slide05WhyDotnetcoreAngularComponent }, // Done
+
+  { path: 'slide-8', component: Slide16SlideCareerPathComponent }, // Done
+  { path: 'slide-9', component: Slide20BeforeMisardComponent }, // Done
+  { path: 'slide-10', component: Slide18RealTimeProjectsYouWillWorkOnComponent }, // Done
+  { path: 'slide-11', component: Slide13ChoosingTheRightComponent }, // Done
+
+
+  { path: 'slide-12', component: Slide07TechnologiesComponent }, // Done
+  { path: 'slide-13', component: Slide11CourseStructureComponent }, // Done
+  { path: 'slide-14', component: Slide12WhatYouCanDevelopComponent }, // Done
+  { path: 'slide-15', component: Slide15TopRealWorldApplicationsComponent },// Done
+
+
+  { path: 'slide-16', component: Slide10TrainerComponent }, // Done
+  { path: 'slide-17', component: Slide09HighlightsComponent }, // Done
+  { path: 'slide-18', component: Slide17WhatCanYouBuildAfterCourseComponent }, // Done
+
+  { path: 'slide-19', component: Slide19TopIqsStudentsComponent }, // Done
+  { path: 'slide-20', component: Slide23InternshipComponent }, // Done
+  { path: 'slide-21', component: Slide14AtTheFinalComponent }
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

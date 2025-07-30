@@ -1,0 +1,85 @@
+/* reviews.component.scss */
+
+:host {
+  display: block;
+  background-color: #f5f9ff;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  color: #f9a826;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  transition: transform 0.8s ease-in-out;
+  padding: 1rem;
+}
+
+.card {
+  border: none;
+  border-left: 6px solid #144264;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(20, 66, 100, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(20, 66, 100, 0.2);
+}
+
+.card img {
+  object-fit: cover;
+  border: 3px solid #f9a826;
+  box-shadow: 0 0 0 4px #fff;
+}
+
+.card h5 {
+  color: #144264;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.bi-star-fill {
+  color: #f9a826;
+  font-size: 1rem;
+}
+
+.blockquote {
+  font-style: italic;
+}
+
+.blockquote-footer {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card h5 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+}

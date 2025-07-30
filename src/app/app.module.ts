@@ -29,6 +29,12 @@ import { Slide15TopRealWorldApplicationsComponent } from './slides/slide15-top-r
 import { Slide16SlideCareerPathComponent } from './slides/slide16-slide-career-path/slide16-slide-career-path.component';
 import { Slide17WhatCanYouBuildAfterCourseComponent } from './slides/slide17-what-can-you-build-after-course/slide17-what-can-you-build-after-course.component';
 import { Slide18RealTimeProjectsYouWillWorkOnComponent } from './slides/slide18-real-time-projects-you-will-work-on/slide18-real-time-projects-you-will-work-on.component';
+import { Slide18FullcourseCurrStepByStepComponent } from './slides/slide18-fullcourse-curr-step-by-step/slide18-fullcourse-curr-step-by-step.component';
+import { Slide19TopIqsStudentsComponent } from './slides/slide19-top-iqs-students/slide19-top-iqs-students.component';
+import { Slide20BeforeMisardComponent } from './slides/slide20-before-misard/slide20-before-misard.component';
+import { Slide21StudetReviewsComponent } from './slides/slide21-studet-reviews/slide21-studet-reviews.component';
+import { Slide22LiveProjectsComponent } from './slides/slide22-live-projects/slide22-live-projects.component';
+import { Slide23InternshipComponent } from './slides/slide23-internship/slide23-internship.component';
 
 
 // import { Slide09ProjectsComponent } from './slides/slide09-projects/slide09-projects.component';
@@ -72,7 +78,15 @@ import { Slide18RealTimeProjectsYouWillWorkOnComponent } from './slides/slide18-
     Slide15TopRealWorldApplicationsComponent,
     Slide16SlideCareerPathComponent,
     Slide17WhatCanYouBuildAfterCourseComponent,
-    Slide18RealTimeProjectsYouWillWorkOnComponent
+    Slide18RealTimeProjectsYouWillWorkOnComponent,
+    Slide18FullcourseCurrStepByStepComponent,
+    
+    Slide19TopIqsStudentsComponent,
+    Slide20BeforeMisardComponent,
+    Slide21StudetReviewsComponent,
+    Slide22LiveProjectsComponent,
+    Slide23InternshipComponent,
+
   ],
   imports: [
     BrowserModule,
