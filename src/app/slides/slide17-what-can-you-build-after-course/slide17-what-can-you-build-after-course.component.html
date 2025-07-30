@@ -1,0 +1,21 @@
+<!-- slide17-what-you-can-develop.component.html -->
+<section class="develop-section py-5 text-white" style="background-color: #144164">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" data-aos="fade-up">
+      🛠️ What Can You Build After This Course?
+    </h2>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" *ngFor="let app of appList" data-aos="zoom-in">
+        <div class="dev-card p-4 h-100 rounded shadow">
+          <div class="d-flex align-items-center mb-3">
+            <img [src]="app.icon" alt="icon" class="dev-icon me-3" />
+            <h5 class="mb-0 text-warning">{{ app.title }}</h5>
+          </div>
+          <p class="mb-2 text-light"><strong>Example:</strong> {{ app.example }}</p>
+          <p class="mb-0 small" style="color:pink"><strong>Stack:</strong> {{ app.stack }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -20,6 +20,7 @@ import { Slide13ChoosingTheRightComponent } from './slides/slide13-choosing-the-
 import { Slide14AtTheFinalComponent } from './slides/slide14-at-the-final/slide14-at-the-final.component';
 import { Slide15TopRealWorldApplicationsComponent } from './slides/slide15-top-real-world-applications/slide15-top-real-world-applications.component';
 import { Slide16SlideCareerPathComponent } from './slides/slide16-slide-career-path/slide16-slide-career-path.component';
+import { Slide17WhatCanYouBuildAfterCourseComponent } from './slides/slide17-what-can-you-build-after-course/slide17-what-can-you-build-after-course.component';
 
 // import { Slide09ProjectsComponent } from './slides/slide09-projects/slide09-projects.component';
 // import { Slide10CareerPathComponent } from './slides/slide10-career-path/slide10-career-path.component';
@@ -77,6 +78,7 @@ const routes: Routes = [
   {path: 'slide-14', component: Slide14AtTheFinalComponent },
   {path: 'slide-15', component: Slide03WhoShouldJoinComponent },
   { path: 'slide-16', component: Slide16SlideCareerPathComponent }, // Placeholder for future slides
+  {path:'slide-17', component: Slide17WhatCanYouBuildAfterCourseComponent }, // Placeholder for future slides
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

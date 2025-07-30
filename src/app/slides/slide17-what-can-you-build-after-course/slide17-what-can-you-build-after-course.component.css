@@ -1,0 +1,35 @@
+/* slide17-what-you-can-develop.component.scss */
+.develop-section {
+  background: linear-gradient(135deg, #144164, #0f305c);
+  text-align: center;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dev-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px dashed #ffffff50;
+  transition: all 0.3s ease;
+  width: 320px;
+  text-align: left;
+}
+.dev-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dev-icon {
+  width: 40px;
+  height: 40px;
+  filter: brightness(1.2);
+}

@@ -27,6 +27,7 @@ import { Slide13ChoosingTheRightComponent } from './slides/slide13-choosing-the-
 import { Slide14AtTheFinalComponent } from './slides/slide14-at-the-final/slide14-at-the-final.component';
 import { Slide15TopRealWorldApplicationsComponent } from './slides/slide15-top-real-world-applications/slide15-top-real-world-applications.component';
 import { Slide16SlideCareerPathComponent } from './slides/slide16-slide-career-path/slide16-slide-career-path.component';
+import { Slide17WhatCanYouBuildAfterCourseComponent } from './slides/slide17-what-can-you-build-after-course/slide17-what-can-you-build-after-course.component';
 
 
 // import { Slide09ProjectsComponent } from './slides/slide09-projects/slide09-projects.component';
@@ -68,7 +69,8 @@ import { Slide16SlideCareerPathComponent } from './slides/slide16-slide-career-p
     Slide13ChoosingTheRightComponent,
     Slide14AtTheFinalComponent,
     Slide15TopRealWorldApplicationsComponent,
-    Slide16SlideCareerPathComponent
+    Slide16SlideCareerPathComponent,
+    Slide17WhatCanYouBuildAfterCourseComponent
   ],
   imports: [
     BrowserModule,
