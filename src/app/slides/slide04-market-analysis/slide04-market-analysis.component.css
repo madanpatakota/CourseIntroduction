@@ -1,45 +1,82 @@
 .market-analysis-section {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f7faff;
+  background-color: #144264 !important; /* Misard Primary */
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.market-analysis-section h2 {
+  color: #F9A826;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 0.6px;
+}
+
+.market-analysis-section h5 {
+  color: #F9A826;
+  font-weight: 600;
+  margin-bottom: 6rem;
 }
 
 .bar-block label {
   font-weight: 600;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 .bar {
   width: 100%;
-  background: #e9ecef;
-  border-radius: 6px;
-  margin-bottom: 16px;
-  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  margin-bottom: 18px;
+  height: 22px;
   overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .fill {
   height: 100%;
-  border-radius: 6px;
+  border-radius: 12px;
   transition: width 1s ease-in-out;
 }
 
 .percent-label {
   font-weight: 500;
-  color: #555;
+  color: #f0f0f0;
+  font-size: 0.95rem;
 }
 
+/* Override Bootstrap’s .text-muted */
+.market-analysis-section .text-muted {
+  color: #e0e0e0 !important;
+}
+
+/* Info boxes */
 .info-box {
-  background: #ffffff;
-  border-left: 4px solid #144164;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 6px solid #F9A826;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5rem;
+  color: #f2f2f2;
+  transition: all 0.3s ease;
+}
+
+.info-box:hover {
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
+  transform: translateY(-4px);
 }
 
 .info-box h5 {
+  font-size: 1.1rem;
   margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #F9A826;
 }
 
 .info-box ul {
@@ -50,14 +87,33 @@
 .info-box ul li {
   margin-bottom: 0.4rem;
   font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.info-box p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+.info-box strong {
+  color: #f9a826;
 }
 
 @media (max-width: 768px) {
   .bar-block label {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .info-box {
     text-align: center;
+    padding: 1.5rem;
+  }
+
+  .market-analysis-section h2 {
+    font-size: 1.6rem;
   }
 }
