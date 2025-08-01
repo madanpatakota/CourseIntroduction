@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing.module'
 import { AppComponent } from './app.component';
-import { NgChartsModule } from 'ng2-charts';
+// import { NgChartsModule } from 'ng2-charts';
 
 // Shared Components
 import { SlideNavComponent } from './shared/slide-nav/slide-nav.component';
@@ -92,7 +92,7 @@ import { Slide23InternshipComponent } from './slides/slide23-internship/slide23-
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    NgChartsModule  // ✅ FIXED 
+     
   ],
   providers: [],
   bootstrap: [AppComponent]
