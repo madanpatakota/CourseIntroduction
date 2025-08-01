@@ -1,6 +1,6 @@
 .app-slide-wrapper {
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: linear-gradient(135deg, #144164, #0f305c);
   font-family: 'Segoe UI', sans-serif;
 }
