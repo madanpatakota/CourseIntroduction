@@ -2,14 +2,55 @@
   background: linear-gradient(135deg, #0d3056, #144164);
   color: #fff;
   font-family: 'Segoe UI', sans-serif;
-  padding: 2rem 20rem;
-  margin-bottom:80px;
-  height: 100vh;
+  padding: 3rem 1rem;
+  margin-bottom: 80px;
+}
+.ecosystem-support {
+  background: linear-gradient(135deg, #004e92, #000428); /* deep blue gradient */
+  color: #e0f7fa;
+  box-shadow: 0 8px 18px rgba(0, 78, 146, 0.35);
+  transition: transform 0.3s ease;
+}
+.ecosystem-support:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 22px rgba(0, 78, 146, 0.45);
+}
+
+.enterprise-stability {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0); /* purple-magenta gradient */
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(138, 43, 226, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.enterprise-stability:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(138, 43, 226, 0.5);
+}
+
+.ecosystem-support h5, .enterprise-stability h5 {
+  color: #ffffff;
+}
+.enterprise-stability h5 {
+  color: pink; /* darker on bright background */
+}
+
+
+@media (min-width: 768px) {
+  .stack-combo-section {
+    padding: 4rem 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .stack-combo-section {
+    padding: 5rem 12rem;
+  }
 }
 
 .workflow-diagram {
   gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tech-block {
@@ -19,8 +60,10 @@
   font-weight: 600;
   font-size: 1.1rem;
   color: #fff;
-  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease-in-out;
+  min-width: 120px;
+  text-align: center;
 }
 .tech-block:hover {
   transform: scale(1.05);
@@ -28,6 +71,7 @@
 .angular { background: #dd0031; }
 .api { background: #0078d7; }
 .db { background: #4caf50; }
+
 .arrow {
   font-size: 2rem;
   animation: arrowBlink 1.2s infinite ease-in-out;
@@ -39,17 +83,24 @@
 }
 
 .job-icon {
-  width: 40px;
-  margin: 0 8px;
+  width: 36px;
+  margin: 0 6px;
 }
 
 .salary-bar-group {
-  text-align: left;
-  max-width: 1000px;
+  text-align: center;
+  max-width: 100%;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .salary-bar-group {
+    text-align: left;
+    max-width: 700px;
+  }
 }
 .bar-label {
   margin: 8px 0 4px;
+  font-weight: 600;
 }
 .bar-container {
   background: #eee;
@@ -68,17 +119,12 @@
 .bar3 { width: 90%; background: #2196f3; }
 
 .rating {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
 .star-icon {
-  width: 100px;
-}
-
-@media (max-width: 768px) {
-  .workflow-diagram {
-    flex-direction: column;
-  }
+  width: 90px;
+  max-width: 100%;
 }
 
 .global-demand-box {
@@ -90,7 +136,7 @@
 .learning-rating {
   background: linear-gradient(45deg, #1de9b6, #1dc4e9);
   color: #fff;
-  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 900px) {
