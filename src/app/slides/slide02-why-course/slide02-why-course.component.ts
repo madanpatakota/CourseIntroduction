@@ -1,4 +1,4 @@
-import { AfterViewInit, ElementRef, Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-slide02-why-course',
@@ -6,24 +6,27 @@ import { AfterViewInit, ElementRef, Component } from '@angular/core';
   styleUrls: ['./slide02-why-course.component.css']
 })
 export class Slide02WhyCourseComponent implements AfterViewInit {
+
   constructor(private el: ElementRef) {}
 
   ngAfterViewInit(): void {
+    const wrapper = document.querySelector('.app-slide-wrapper'); // scrollable container
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-up');
+            entry.target.classList.add('aos-animate');
           }
         });
       },
       {
-        threshold: 0.1,
-        root: document.querySelector('.app-slide-wrapper') // 👈 important!
+        root: wrapper,
+        threshold: 0.1
       }
     );
 
-    const items = this.el.nativeElement.querySelectorAll('.observe-fade-up');
-    items.forEach((item: Element) => observer.observe(item));
+    const elements = this.el.nativeElement.querySelectorAll('[data-aos]');
+    elements.forEach((el: Element) => observer.observe(el));
   }
 }

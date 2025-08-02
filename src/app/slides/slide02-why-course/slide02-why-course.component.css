@@ -1,12 +1,9 @@
 .slide {
-  min-height: 100vh; /* use min-height, not height */
-  background: linear-gradient(to right, #0d3056, #144164);
-  color: #fff;
+  min-height: 100vh; /* ✅ allow more height */
   padding: 40px 16px;
-  position: relative;
-  overflow-y: visible; /* allow content to overflow naturally */
+  background: linear-gradient(to right, #0d3056, #144164);
+  overflow-y: visible; /* ✅ let content grow */
 }
-
 
 .card {
   background-color: #ffffff;
@@ -48,3 +45,38 @@
   transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+  .slide {
+    padding-bottom: 80px; /* extra scroll area at bottom */
+  }
+}
+
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="zoom-in"] {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+[data-aos="zoom-in"].aos-animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[data-aos="flip-left"] {
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+[data-aos="flip-left"].aos-animate {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
