@@ -4,6 +4,7 @@
   color: #fff;
   font-family: 'Segoe UI', sans-serif;
   min-height: 100vh;
+  position: relative;
 }
 
 .slide-heading {
@@ -12,6 +13,7 @@
   font-weight: bold;
   margin-bottom: 50px;
 }
+
 .slide-heading span {
   background-color: #ffffff22;
   padding: 4px 12px;
@@ -37,22 +39,28 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
+
 .portal-card:hover {
   transform: translateY(-10px);
 }
+
 .portal-icon {
   height: 70px;
+  object-fit: contain;
   margin-bottom: 15px;
 }
+
 .portal-card h4 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .portal-card p {
   font-size: 1rem;
   margin-bottom: 15px;
 }
+
 .portal-link {
   display: inline-block;
   padding: 8px 16px;
@@ -62,6 +70,7 @@
   text-decoration: none;
   transition: background 0.3s ease;
 }
+
 .portal-link:hover {
   background: #0d3056;
 }
@@ -76,19 +85,71 @@
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .portal-summary h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
+
 .portal-summary p {
   font-size: 1rem;
 }
 
-@media (max-width: 768px) {
-  .portal-card {
-    width: 100%;
-  }
+/* Tablet Responsive */
+@media (max-width: 992px) {
   .slide-heading {
     font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .portal-card {
+    width: 45%;
+  }
+
+  .portal-summary {
+    padding: 25px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .job-portal-stats-slide {
+    padding: 40px 15px;
+  }
+
+  .slide-heading {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+  }
+
+  .portal-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .portal-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .portal-card p {
+    font-size: 0.95rem;
+  }
+
+  .portal-link {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .portal-summary {
+    padding: 20px;
+  }
+
+  .portal-summary h3 {
+    font-size: 1.25rem;
+  }
+
+  .portal-summary p {
+    font-size: 0.95rem;
   }
 }
