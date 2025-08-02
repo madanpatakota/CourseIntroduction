@@ -1,30 +1,34 @@
 .market-analysis-section {
-  background-color: #144264 !important; /* Misard Primary */
+  background-color: #144264 !important;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding: 6rem 1rem;
+  position: relative;
 }
 
 .market-analysis-section h2 {
   color: #F9A826;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 2.25rem;
   letter-spacing: 0.6px;
+  margin-bottom: 3rem;
 }
 
 .market-analysis-section h5 {
   color: #F9A826;
   font-weight: 600;
-  margin-bottom: 6rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 
+/* BAR CHART */
 .bar-block label {
   font-weight: 600;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 0.4rem;
   font-size: 1rem;
 }
 
@@ -32,7 +36,7 @@
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 1.2rem;
   height: 22px;
   overflow: hidden;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -48,18 +52,14 @@
   font-weight: 500;
   color: #f0f0f0;
   font-size: 0.95rem;
+  margin-left: 0.5rem;
 }
 
-/* Override Bootstrap’s .text-muted */
-.market-analysis-section .text-muted {
-  color: #e0e0e0 !important;
-}
-
-/* Info boxes */
+/* INFO BOXES */
 .info-box {
   background: rgba(255, 255, 255, 0.05);
   border-left: 6px solid #F9A826;
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem 1.75rem;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   margin-bottom: 1.5rem;
@@ -73,7 +73,7 @@
 }
 
 .info-box h5 {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   margin-bottom: 0.75rem;
   font-weight: 700;
   color: #F9A826;
@@ -82,10 +82,11 @@
 .info-box ul {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .info-box ul li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -95,25 +96,85 @@
   font-size: 0.95rem;
   line-height: 1.6;
   color: #f0f0f0;
+  margin-bottom: 0.75rem;
 }
 
 .info-box strong {
   color: #f9a826;
 }
 
-@media (max-width: 768px) {
+/* OVERRIDE BOOTSTRAP MUTED */
+.market-analysis-section .text-muted {
+  color: #e0e0e0 !important;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 992px) {
+  .market-analysis-section h2 {
+    font-size: 2rem;
+  }
+
+  .market-analysis-section h5 {
+    font-size: 1.15rem;
+  }
+
   .bar-block label {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .bar {
+    height: 18px;
+  }
+
+  .percent-label {
+    margin-left: 0;
   }
 
   .info-box {
-    text-align: center;
-    padding: 1.5rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .info-box h5 {
+    font-size: 1.05rem;
+  }
+
+  .info-box p,
+  .info-box li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .market-analysis-section {
+    padding: 4rem 1rem 6rem;
   }
 
   .market-analysis-section h2 {
-    font-size: 1.6rem;
+    font-size: 1.65rem;
+  }
+
+  .bar {
+    height: 16px;
+  }
+
+  .bar-block label {
+    font-size: 0.9rem;
+  }
+
+  .info-box {
+    text-align: left;
+    padding: 1.25rem;
+  }
+
+  .info-box h5 {
+    font-size: 1rem;
+  }
+
+  .info-box p,
+  .info-box li {
+    font-size: 0.9rem;
   }
 }

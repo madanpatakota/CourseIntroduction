@@ -1,45 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-declare var AOS: any;
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
+import { registerScrollAnimations } from 'src/app/shared/utils/scroll-antimate';
+
 
 @Component({
   selector: 'app-slide04-market-analysis',
   templateUrl: './slide04-market-analysis.component.html',
   styleUrls: ['./slide04-market-analysis.component.css']
 })
-export class Slide04MarketAnalysisComponent implements OnInit{
+export class Slide04MarketAnalysisComponent implements AfterViewInit{
 
-   ngOnInit(): void {
-    AOS.init({ once: true });
+ constructor(private el: ElementRef) {}
+
+  ngAfterViewInit(): void {
+    registerScrollAnimations('.app-slide-wrapper', this.el.nativeElement);
   }
 
-//  pieChartData: ChartData<'pie', number[], string> = {
-//   labels: ['Full Stack', 'Cloud', 'Others'],
-//   datasets: [
-//     {
-//       data: [60, 25, 15],
-//       backgroundColor: ['#4CAF50', '#2196F3', '#FFC107'],
-//       hoverOffset: 8
-//     }
-//   ]
-// };
-
-
-//   pieChartOptions: ChartOptions<'pie'> = {
-//     responsive: true,
-//     plugins: {
-//       legend: {
-//         position: 'bottom',
-//         labels: {
-//           font: {
-//             size: 14
-//           }
-//         }
-//       },
-//       tooltip: {
-//         enabled: true
-//       }
-//     }
-//   };
-
-//   pieChartType: 'pie' = 'pie';
 }

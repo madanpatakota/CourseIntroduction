@@ -1,17 +1,18 @@
 .slide-nav {
-  position: absolute;
+  position: fixed; /* ✅ fixed instead of absolute */
   top: 50%;
   left: 0;
   right: 0;
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
   transform: translateY(-50%);
-  z-index: 9999;
+  pointer-events: none; /* Allow clicks only on arrows */
 }
 
 .slide-nav button {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1); /* transparent white */
   color: #144164;
   border: none;
   border-radius: 50%;
@@ -23,25 +24,29 @@
   justify-content: center;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  padding: 0; 
+  padding: 0;
+  backdrop-filter: blur(5px); /* for glass effect */
+  pointer-events: auto;
 }
 
 .slide-nav button:hover {
-  background-color: #228be6;
+  background-color: rgba(255, 255, 255, 0.3);
   color: #ffffff;
   transform: scale(1.1);
   box-shadow: 0 0 18px rgba(34, 139, 230, 0.6);
 }
 
 .slide-nav i {
-  font-size: 1rem; /* Smaller icon size */
+  font-size: 1rem;
 }
 
-
+/* 📱 Mobile: Move to bottom center */
 @media (max-width: 576px) {
   .slide-nav {
     top: auto;
-    bottom: 20px;
+    bottom: 30px;
     transform: none;
+    justify-content: center;
+    gap: 2rem;
   }
 }
