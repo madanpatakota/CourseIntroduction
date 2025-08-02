@@ -4,52 +4,96 @@
   color: #ffffff;
   padding: 60px 20px;
   overflow-y: auto;
-}
-
-.slide-heading {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.trainer-image {
-  max-width: 260px;
-  border-radius: 50%;
-  border: 4px solid #ffffff;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
-}
-
-.trainer-intro {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-.trainer-slide p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin-bottom: 16px;
-}
-
-.trainer-slide a {
-  color: #ffc107;
-  text-decoration: none;
-}
-
-.trainer-slide a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .trainer-slide {
-    text-align: center;
-  }
-
-  .trainer-image {
-    margin-bottom: 30px;
-  }
+  font-family: 'Poppins', sans-serif;
 
   .slide-heading {
-    font-size: 2rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  a {
+    color: #ffc107;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+.trainer-image {
+  width: 100%;
+  max-width: 260px;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+  border-radius: 12px; /* optional rounded corners */
+  background-color: #144164;
+}
+
+
+  .trainer-intro {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+
+  @media (max-width: 991px) {
+    .slide-heading {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+
+    .trainer-intro {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .trainer-image {
+      margin-bottom: 30px;
+    }
+
+    .row.align-items-center {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 40px 15px;
+
+    .slide-heading {
+      font-size: 1.8rem;
+    }
+
+    .trainer-intro {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+
+    .trainer-image {
+      max-width: 200px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .trainer-image {
+    margin: 0 auto 30px auto;
+    display: block;
   }
 }
