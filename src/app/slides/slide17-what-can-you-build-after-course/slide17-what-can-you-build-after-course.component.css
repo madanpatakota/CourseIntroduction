@@ -1,42 +1,111 @@
-/* slide17-what-you-can-develop.component.scss */
 .develop-section {
   background: linear-gradient(135deg, #144164, #0f305c);
   text-align: center;
-}
+  padding: 60px 20px;
 
-.develop-section .container {
-  max-height: 2000px;
-  margin: 0 auto;
-  margin-bottom: 800px !important; /* ✅ this will force it to work */
-}
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
 
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 3rem;
+  }
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
+  .dev-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px dashed #ffffff50;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 320px;
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 12px;
+    height: 100%;
 
-.dev-card {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px dashed #ffffff50;
-  transition: all 0.3s ease;
-  width: 320px;
-  text-align: left;
-}
-.dev-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
 
-.dev-icon {
-  width: 40px;
-  height: 40px;
-  filter: brightness(1.2);
+    h5 {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  }
+
+  .dev-icon {
+    width: 40px;
+    height: 40px;
+    filter: brightness(1.2);
+    flex-shrink: 0;
+  }
+
+  .d-flex {
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  // Tablet
+  @media (max-width: 991px) {
+    h2 {
+      font-size: 2rem;
+    }
+
+    .dev-card h5 {
+      font-size: 1rem;
+    }
+
+    .dev-card p {
+      font-size: 0.9rem;
+    }
+  }
+
+  // Mobile
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 1.7rem;
+      line-height: 1.4;
+    }
+
+    .dev-card {
+      padding: 1.25rem;
+    }
+
+    .dev-icon {
+      width: 36px;
+      height: 36px;
+    }
+
+    .dev-card h5 {
+      font-size: 1rem;
+    }
+
+    .dev-card p {
+      font-size: 0.88rem;
+    }
+
+    .d-flex {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
 }

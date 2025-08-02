@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
+import { registerScrollAnimations } from 'src/app/shared/utils/scroll-antimate';
 
 @Component({
   selector: 'app-slide17-what-can-you-build-after-course',
   templateUrl: './slide17-what-can-you-build-after-course.component.html',
   styleUrls: ['./slide17-what-can-you-build-after-course.component.css']
 })
-export class Slide17WhatCanYouBuildAfterCourseComponent {
+export class Slide17WhatCanYouBuildAfterCourseComponent  implements AfterViewInit {
+ constructor(private el: ElementRef) {}
+
+  ngAfterViewInit(): void {
+    registerScrollAnimations('.app-slide-wrapper', this.el.nativeElement);
+  }
+
 appList = [
     {
       title: 'Task Management',
