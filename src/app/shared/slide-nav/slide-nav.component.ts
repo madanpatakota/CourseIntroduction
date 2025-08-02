@@ -27,12 +27,24 @@ export class SlideNavComponent {
     return this.currentSlide === this.totalSlides;
   }
 
-  goBack(): void {
-    //this.router.navigate([`/slide-${this.currentSlide - 1}`]);
-    this.router.navigate([`/${this.backRoute}`]);
-  }
+goBack(): void {
+  this.router.navigate([`/${this.backRoute}`]).then(() => {
+    this.scrollToTop();
+  });
+}
 
-  goNext(): void {
-    this.router.navigate([`/${this.FrontRoute}`]);
-  }
+goNext(): void {
+  this.router.navigate([`/${this.FrontRoute}`]).then(() => {
+    this.scrollToTop();
+  });
+}
+
+scrollToTop(): void {
+  // Add this helper method
+  setTimeout(() => {
+    const contentContainer = document.querySelector('main') || document.querySelector('.slide-wrapper') || document.documentElement;
+    contentContainer.scrollTo({ top: 0, behavior: 'smooth' });
+  }, 50);
+}
+
 }
