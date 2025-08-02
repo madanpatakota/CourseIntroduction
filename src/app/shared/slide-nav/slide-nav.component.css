@@ -36,3 +36,12 @@
 .slide-nav i {
   font-size: 1rem; /* Smaller icon size */
 }
+
+
+@media (max-width: 576px) {
+  .slide-nav {
+    top: auto;
+    bottom: 20px;
+    transform: none;
+  }
+}
