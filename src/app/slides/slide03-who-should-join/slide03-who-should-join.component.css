@@ -1,27 +1,119 @@
 .slide {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(to right, #0d3056, #144164);
   color: #fff;
-  padding: 40px;
+  padding: 60px 20px;
   position: relative;
-  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
+h2.display-5 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+p.lead {
+  font-size: 1.25rem;
+  max-width: 720px;
+  margin: 0 auto 2.5rem auto;
+  color: #e0e0e0;
+}
+
+/* Cards */
 .card {
   background-color: #ffffff;
   border-radius: 16px;
-  transition: transform 0.3s ease;
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 }
 
 .card h5 {
+  font-size: 1.25rem;
   color: #144164;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .card p {
   font-size: 1rem;
   color: #333;
+  margin: 0;
+}
+
+.card i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Grid spacing */
+.row.g-4 {
+  margin-top: 2rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card i {
+    font-size: 2rem;
+  }
+
+  .card h5 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  h2.display-5 {
+    font-size: 2rem;
+  }
+
+  p.lead {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide {
+    padding: 40px 15px 80px 15px;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .card i {
+    font-size: 1.8rem;
+  }
+
+  .card h5 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  h2.display-5 {
+    font-size: 1.75rem;
+  }
+
+  p.lead {
+    font-size: 1rem;
+  }
 }
