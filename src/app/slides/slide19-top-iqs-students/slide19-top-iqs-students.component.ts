@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
+import { registerScrollAnimations } from 'src/app/shared/utils/scroll-antimate';
 
 @Component({
   selector: 'app-slide19-top-iqs-students',
   templateUrl: './slide19-top-iqs-students.component.html',
   styleUrls: ['./slide19-top-iqs-students.component.css']
 })
-export class Slide19TopIqsStudentsComponent {
+export class Slide19TopIqsStudentsComponent  implements AfterViewInit {
+ constructor(private el: ElementRef) {}
+
+  ngAfterViewInit(): void {
+    registerScrollAnimations('.app-slide-wrapper', this.el.nativeElement);
+  }
+
 
     faqs = [
     {
