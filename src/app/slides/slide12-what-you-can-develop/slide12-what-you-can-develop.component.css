@@ -1,5 +1,5 @@
 .slide-applications {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
   color: #fff;
   padding: 220px 20px 100px 20px;
 
@@ -29,6 +29,9 @@
     text-align: center;
     border-radius: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    border-color:  darkcyan ;
+    /* border- */
 
     img {
       width: 60px;
