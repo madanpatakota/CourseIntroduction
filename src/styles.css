@@ -5,7 +5,7 @@ html, body {
   padding: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: #f5f9ff; /* Optional default background */
+   background: linear-gradient(to bottom right, #144164, #0d3056);
 }
 
 app-root {

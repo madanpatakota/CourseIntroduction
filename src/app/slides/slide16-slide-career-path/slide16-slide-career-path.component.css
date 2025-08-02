@@ -1,22 +1,23 @@
 .career-path-section {
   background: linear-gradient(to bottom right, #144164, #0d3056);
-  padding: 12rem 1rem;
+  padding: 6rem 1rem;
   color: white;
   text-align: center;
 }
 
 .career-title {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .career-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  max-width: 1100px;
+  align-items: flex-start;
+  gap: 1.2rem;
+  max-width: 1200px;
   margin: auto;
   position: relative;
 }
@@ -24,14 +25,18 @@
 .career-step {
   background: rgba(255, 255, 255, 0.06);
   border: 2px dashed rgba(255, 255, 255, 0.3);
-  padding: 1.5rem;
-  width: 250px;
-  border-radius: 15px;
-  transition: 0.3s;
+  padding: 1.8rem 1.2rem;
+  width: 260px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .career-step:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -40,48 +45,77 @@
 }
 
 .icon-wrapper img {
-  width: 60px;
-  height: 60px;
-  background: #fff;
+  width: 64px;
+  height: 64px;
+  background: #ffffff;
   border-radius: 50%;
   padding: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 .career-step h4 {
   color: #ffd700;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
 }
 
 .career-step p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #e0e0e0;
 }
 
-/* Arrow Style */
+/* Horizontal Arrows */
 .career-arrow {
   font-size: 2rem;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   padding: 0 10px;
 }
 
-/* Down arrow */
+/* Down Arrow Between Rows */
 .down-arrow {
   width: 100%;
   text-align: center;
   font-size: 2rem;
   margin: 1rem 0;
-  color: white;
+  color: #ffffff;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* ====== Responsive Handling ====== */
+@media (max-width: 992px) {
+  .career-grid {
+    flex-direction: row;
+    gap: 1.2rem;
+  }
+
+  .career-step {
+    width: 45%;
+    min-width: 260px;
+  }
+
+  .career-arrow {
+    display: none;
+  }
+
+  .down-arrow {
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 576px) {
   .career-grid {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .career-step {
+    width: 100%;
+  }
+
+  .career-title {
+    font-size: 1.8rem;
   }
 
   .career-arrow,
