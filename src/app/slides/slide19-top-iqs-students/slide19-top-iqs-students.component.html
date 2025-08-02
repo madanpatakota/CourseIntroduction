@@ -1,15 +1,9 @@
-<!-- top-questions.component.html -->
 <section class="slide-wrapper top-questions-section" data-aos="fade-up">
   <div class="container py-5">
-    <h2 class="text-center mb-5 fw-bold text-primary-emphasis">
-      🧠 Top Questions by Students
-    </h2>
+    <h2 class="text-center mb-5 fw-bold">🧠 Top Questions by Students</h2>
 
     <div class="accordion shadow-lg" id="faqAccordion">
-      <div
-        class="accordion-item mb-4 rounded-4 border-0"
-        *ngFor="let faq of faqs; let i = index"
-      >
+      <div class="accordion-item mb-4 rounded-4 border-0" *ngFor="let faq of faqs; let i = index">
         <h2 class="accordion-header">
           <button
             class="accordion-button collapsed fw-semibold"
@@ -18,29 +12,19 @@
             [attr.data-bs-target]="'#faq' + i"
             [attr.aria-controls]="'faq' + i"
           >
-            <i
-              class="bi bi-question-circle-fill me-2"
-              style="color: #F9A826"
-            ></i>
+            <i class="bi bi-person-circle me-2 text-primary fs-5"></i> <!-- 👤 User Icon -->
             {{ faq.question }}
           </button>
         </h2>
-        <div
-          [id]="'faq' + i"
-          class="accordion-collapse collapse"
-          [class.show]="i === 0"
-        >
-          <div
-            class="accordion-body bg-white rounded-bottom-4 shadow-sm px-4 py-3"
-          >
-            <i class="bi bi-info-circle-fill me-2 text-success"></i>
+        <div [id]="'faq' + i" class="accordion-collapse collapse" [class.show]="i === 0">
+          <div class="accordion-body bg-white rounded-bottom-4 shadow-sm px-4 py-3">
+            <i class="bi bi-chat-left-text-fill me-2 text-success fs-5"></i> <!-- 💬 Answer Icon -->
             {{ faq.answer }}
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  
 </section>
+
 <app-slide-nav [backRoute]="'slide-18'" [FrontRoute]="'slide-20'"></app-slide-nav>

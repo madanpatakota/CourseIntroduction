@@ -1,14 +1,24 @@
 .top-questions-section {
-  background-color: #f5f9ff;
+  background: linear-gradient(135deg, #144164, #0f305c);
   font-family: "Poppins", sans-serif;
   padding: 80px 20px;
 
   h2 {
-    color: #144264;
+    color: #ffffff;
     font-weight: 800;
+    font-size: 2.4rem;
     letter-spacing: 0.5px;
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 1.7rem;
+      line-height: 1.4;
+    }
   }
 
   .accordion {
@@ -20,12 +30,13 @@
     background-color: #ffffff;
     border: none;
     border-radius: 14px;
+    margin-bottom: 1.5rem;
     box-shadow: 0 8px 20px rgba(20, 66, 100, 0.1);
     transition: transform 0.3s ease;
-  }
 
-  .accordion-item:hover {
-    transform: translateY(-2px);
+    &:hover {
+      transform: translateY(-2px);
+    }
   }
 
   .accordion-button {
@@ -35,6 +46,22 @@
     font-size: 1.1rem;
     padding: 1rem 1.25rem;
     border-radius: 14px;
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 1.3rem;
+      margin-right: 0.6rem;
+      color: #f9a826;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 0.95rem;
+    }
   }
 
   .accordion-button:not(.collapsed) {
@@ -47,19 +74,21 @@
     font-size: 1rem;
     line-height: 1.7;
     color: #333;
-  }
+    padding: 1.25rem 1.5rem;
+    border-top: 1px solid #eee;
+    border-radius: 0 0 14px 14px;
 
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 1.6rem;
+    i {
+      color: #28a745;
+      margin-right: 0.5rem;
     }
 
-    .accordion-button {
-      font-size: 1rem;
-    }
-
-    .accordion-body {
+    @media (max-width: 768px) {
       font-size: 0.95rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 0.88rem;
     }
   }
 }

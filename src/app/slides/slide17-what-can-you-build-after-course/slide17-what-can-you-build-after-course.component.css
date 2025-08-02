@@ -1,110 +1,107 @@
 .develop-section {
   background: linear-gradient(135deg, #144164, #0f305c);
-  text-align: center;
-  padding: 60px 20px;
+  color: #ffffff;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 1.6rem;
+      line-height: 1.4;
+    }
+  }
 
   .container {
     max-width: 1140px;
     margin: 0 auto;
-    margin-bottom: 100px;
-  }
-
-  h2 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 3rem;
   }
 
   .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .dev-card {
     background-color: rgba(255, 255, 255, 0.05);
     border: 1px dashed #ffffff50;
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 320px;
+    border-radius: 14px;
+    padding: 1.75rem;
     text-align: left;
-    padding: 1.5rem;
-    border-radius: 12px;
+    width: 100%;
+    max-width: 340px;
     height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-6px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     }
 
     h5 {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: 600;
+      margin: 0;
+      color: #ffc107;
+
+      @media (max-width: 576px) {
+        font-size: 1rem;
+      }
     }
 
     p {
       font-size: 0.95rem;
-      line-height: 1.5;
+      line-height: 1.6;
+
+      &.text-light {
+        color: #e0e0e0 !important;
+      }
+
+      &.small {
+        font-size: 0.88rem;
+        color: #ffb6c1 !important;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 0.88rem;
+      }
     }
   }
 
   .dev-icon {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     filter: brightness(1.2);
-    flex-shrink: 0;
+    margin-right: 14px;
+
+    @media (max-width: 576px) {
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+    }
   }
 
   .d-flex {
-    gap: 12px;
-    flex-wrap: wrap;
+    display: flex;
     align-items: center;
-  }
+    gap: 12px;
 
-  @media (max-width: 991px) {
-    h2 {
-      font-size: 2rem;
-    }
-
-    .dev-card h5 {
-      font-size: 1rem;
-    }
-
-    .dev-card p {
-      font-size: 0.9rem;
-    }
-  }
-
-
-  @media (max-width: 576px) {
-    h2 {
-      font-size: 1.7rem;
-      line-height: 1.4;
-    }
-
-    .dev-card {
-      padding: 1.25rem;
-    }
-
-    .dev-icon {
-      width: 36px;
-      height: 36px;
-    }
-
-    .dev-card h5 {
-      font-size: 1rem;
-    }
-
-    .dev-card p {
-      font-size: 0.88rem;
-    }
-
-    .d-flex {
+    @media (max-width: 576px) {
       flex-direction: column;
       align-items: flex-start;
-      text-align: left;
+      gap: 6px;
     }
   }
 }
