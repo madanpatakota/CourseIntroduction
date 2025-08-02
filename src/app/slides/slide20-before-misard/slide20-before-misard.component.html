@@ -1,7 +1,36 @@
 <div class="before-after-section py-5">
   <div class="container">
     <h2 class="text-center fw-bold mb-5">📈 Before vs After Misard</h2>
-    <div class="row g-4 justify-content-center" style="margin-bottom: 300px">
+    <!-- 📊 Journey Diagram Section -->
+    <div class="journey-diagram mb-5 text-center d-block" data-aos="zoom-in">
+      <div class="journey-flow d-flex justify-content-center align-items-center flex-wrap gap-4">
+        <div class="journey-step">
+          <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" class="step-icon" />
+          <div class="label">No Projects</div>
+        </div>
+        <div class="arrow-icon">➔</div>
+        <div class="journey-step">
+          <img src="https://cdn-icons-png.flaticon.com/512/906/906175.png" class="step-icon" />
+          <div class="label">Learned Stack</div>
+        </div>
+        <div class="arrow-icon">➔</div>
+        <div class="journey-step">
+          <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png" class="step-icon" />
+          <div class="label">Real Projects</div>
+        </div>
+        <div class="arrow-icon">➔</div>
+        <div class="journey-step">
+          <img src="https://cdn-icons-png.flaticon.com/512/3189/3189865.png" class="step-icon" />
+          <div class="label">Grooming</div>
+        </div>
+        <div class="arrow-icon">➔</div>
+        <div class="journey-step">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135765.png" class="step-icon" />
+          <div class="label">Job Offer</div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
       <!-- Before Card -->
       <div class="col-md-6" data-aos="fade-right">
         <div class="card comparison-card bg-danger text-white h-100 shadow-lg border-0">
@@ -44,6 +73,7 @@
         </div>
       </div>
     </div>
-    <app-slide-nav [backRoute]="'slide-8'" [FrontRoute]="'slide-10'"></app-slide-nav>
+    
   </div>
 </div>
+ <app-slide-nav [backRoute]="'slide-8'" [FrontRoute]="'slide-10'"></app-slide-nav>
