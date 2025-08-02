@@ -27,6 +27,7 @@ import { Slide20BeforeMisardComponent } from './slides/slide20-before-misard/sli
 import { Slide21StudetReviewsComponent } from './slides/slide21-studet-reviews/slide21-studet-reviews.component';
 import { Slide22LiveProjectsComponent } from './slides/slide22-live-projects/slide22-live-projects.component';
 import { Slide23InternshipComponent } from './slides/slide23-internship/slide23-internship.component';
+import { Slide24ThankYouComponent } from './slides/slide24-thank-you/slide24-thank-you.component';
 
 // import { Slide09ProjectsComponent } from './slides/slide09-projects/slide09-projects.component';
 // import { Slide10CareerPathComponent } from './slides/slide10-career-path/slide10-career-path.component';
@@ -94,7 +95,8 @@ const routes: Routes = [
 
   { path: 'slide-19', component: Slide19TopIqsStudentsComponent }, // Done
   { path: 'slide-20', component: Slide23InternshipComponent }, // Done
-  { path: 'slide-21', component: Slide14AtTheFinalComponent }
+  { path: 'slide-21', component: Slide14AtTheFinalComponent },
+  { path: 'slide-22', component: Slide24ThankYouComponent }
 
 ];
 @NgModule({
