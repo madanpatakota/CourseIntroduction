@@ -1,13 +1,10 @@
-<!-- orbit-career-path.component.html -->
-<section class="orbit-slide-wrapper d-flex align-items-center justify-content-center text-white" id="orbitSlide" data-aos="fade-up">
-  <div class="orbit-container text-center">
-    <h2 class="orbit-title mb-5" data-aos="zoom-in" style="
-    margin-top: -85px;
-">🚀 Your Career Path in Full-Stack Development</h2>
+<section class="orbit-slide-wrapper" id="orbitSlide" data-aos="fade-up">
+  <div class="orbit-container">
+    <h2 class="orbit-title" data-aos="zoom-in" style="margin-bottom: 100px;">🚀 Your Career Path in Full-Stack Development</h2>
 
-    <div class="orbit-wrapper position-relative mx-auto">
+    <div class="orbit-wrapper position-relative">
       <div class="orbit-center">
-        <div class="central-icon">
+        <div class="central-icon" data-aos="zoom-in">
           <img src="https://cdn-icons-png.flaticon.com/512/1093/1093345.png" alt="YOU" />
           <span>YOU</span>
         </div>
@@ -25,5 +22,6 @@
       </ul>
     </div>
   </div>
- <app-slide-nav  [backRoute]="'slide-9'" [FrontRoute]="'slide-11'"></app-slide-nav>
 </section>
+
+<app-slide-nav [backRoute]="'slide-9'" [FrontRoute]="'slide-11'"></app-slide-nav>

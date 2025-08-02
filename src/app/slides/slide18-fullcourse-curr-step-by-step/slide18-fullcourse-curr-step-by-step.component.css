@@ -1,71 +1,113 @@
 .stepper-slide-wrapper {
   background-color: #144164;
   color: #ffffff;
-}
+  font-family: 'Poppins', sans-serif;
 
-.stepper-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.stepper {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  position: relative;
-  padding-left: 30px;
-}
-
-.step {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  position: relative;
-}
-
-.step-number {
-  background-color: #ffc107;
-  color: #000;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 38px;
-  height: 38px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.step-content h5 {
-  margin-bottom: 4px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #fff;
-}
-
-.step-content p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #e0e0e0;
-  max-width: 700px;
-}
-
-@media (max-width: 768px) {
   .stepper-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f9a826;
   }
 
   .stepper {
-    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
   }
 
   .step {
-    flex-direction: column;
+    display: flex;
     align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 1rem 1rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
   }
 
   .step-number {
-    margin-bottom: 0.5rem;
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .step-content {
+    h5 {
+      margin-bottom: 4px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      color: #e0e0e0;
+      max-width: 750px;
+    }
+  }
+
+
+  @media (max-width: 991px) {
+    .stepper-title {
+      font-size: 2rem;
+    }
+
+    .step {
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .step-number {
+      width: 36px;
+      height: 36px;
+      font-size: 1rem;
+    }
+
+    .step-content {
+      h5 {
+        font-size: 1.15rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+
+  @media (max-width: 576px) {
+    .stepper-title {
+      font-size: 1.7rem;
+    }
+
+    .step {
+      gap: 0.75rem;
+    }
+
+    .step-content {
+      h5 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
   }
 }

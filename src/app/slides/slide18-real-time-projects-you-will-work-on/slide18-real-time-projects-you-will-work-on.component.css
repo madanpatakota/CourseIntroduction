@@ -6,26 +6,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .orbit-container {
   max-width: 1200px;
-  margin: auto;
+  width: 100%;
   text-align: center;
 }
 
 .orbit-title {
-  font-size: 2.8rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 800;
   color: #fff;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
+  margin-top: -70px;
 }
 
 .orbit-wrapper {
-  width: 480px; /* Increased from 340px */
+  width: 480px;
   height: 480px;
   position: relative;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .orbit-center {
@@ -36,8 +39,8 @@
 }
 
 .central-icon {
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   background: #ffcc80;
   border-radius: 50%;
   display: flex;
@@ -46,12 +49,18 @@
   align-items: center;
   font-weight: bold;
   color: #000;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   font-size: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.central-icon:hover {
+  transform: scale(1.1);
 }
 
 .central-icon img {
-  width: 40px;
+  width: 38px;
   margin-bottom: 8px;
 }
 
@@ -71,7 +80,12 @@
   width: 100px;
   text-align: center;
   font-size: 0.95rem;
-  color: white;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.orbit-point:hover {
+  transform: scale(1.1);
 }
 
 .orbit-point img {
@@ -80,7 +94,7 @@
   margin-bottom: 6px;
 }
 
-/* Orbit Positioning - Adjusted for larger orbit */
+/* Orbit Positions */
 .orbit-point:nth-child(1) { top: 0%; left: 50%; transform: translate(-50%, -50%); }
 .orbit-point:nth-child(2) { top: 12%; left: 85%; transform: translate(-50%, -50%); }
 .orbit-point:nth-child(3) { top: 50%; left: 100%; transform: translate(-50%, -50%); }
@@ -90,11 +104,11 @@
 .orbit-point:nth-child(7) { top: 50%; left: 0%; transform: translate(-50%, -50%); }
 .orbit-point:nth-child(8) { top: 12%; left: 15%; transform: translate(-50%, -50%); }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Tablet */
+@media (max-width: 991px) {
   .orbit-wrapper {
-    width: 320px;
-    height: 320px;
+    width: 360px;
+    height: 360px;
   }
 
   .central-icon {
@@ -118,10 +132,41 @@
   }
 
   .orbit-title {
-  font-size: 2.8rem;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 1.5rem; /* Reduced from 3rem */
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
+/* Mobile */
+@media (max-width: 576px) {
+  .orbit-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .central-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 0.7rem;
+  }
+
+  .central-icon img {
+    width: 22px;
+  }
+
+  .orbit-point {
+    font-size: 0.65rem;
+    width: 66px;
+  }
+
+  .orbit-point img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .orbit-title {
+    font-size: 1.4rem;
+    margin-top: -30px;
+    margin-bottom: 1rem;
+  }
 }
