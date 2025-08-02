@@ -1,37 +1,44 @@
 .career-tech-section {
   background: #0e1b2c;
   color: #fff;
-}
+  font-family: 'Poppins', sans-serif;
 
-.career-tech-section h2 {
-  color: #00c6ff;
-  font-weight: 700;
-  font-size: 2.4rem;
+  h2 {
+    color: #00c6ff;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: 0.3px;
+  }
 }
 
 .timeline {
   position: relative;
+  max-width: 800px;
   margin: 0 auto;
   padding-left: 25px;
   border-left: 4px solid #00c6ff;
-  max-width: 800px;
 }
 
 .timeline-item {
   position: relative;
-  padding: 20px 0 20px 40px;
+  padding: 25px 0 25px 45px;
 }
 
 .icon-box {
   position: absolute;
-  left: -28px;
-  top: 20px;
+  left: -34px;
+  top: 30px;
   background: #00c6ff;
   color: #fff;
   border-radius: 50%;
   padding: 12px;
   font-size: 1.2rem;
   box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
 }
 
 .content-box {
@@ -39,29 +46,92 @@
   padding: 20px;
   border-radius: 10px;
   border-left: 4px solid #00c6ff;
+  transition: transform 0.3s ease;
+}
+
+.content-box:hover {
+  transform: translateY(-3px);
 }
 
 .content-box h5 {
   color: #00f7ff;
   margin-bottom: 10px;
   font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .content-box p {
   color: #b8d2e0;
-  margin-bottom: 0;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
+  .career-tech-section h2 {
+    font-size: 2rem;
+  }
+
   .timeline {
-    padding-left: 15px;
+    padding-left: 18px;
     border-left-width: 3px;
   }
-  .icon-box {
-    left: -22px;
-    font-size: 1rem;
+
+  .timeline-item {
+    padding: 20px 0 20px 35px;
   }
+
+  .icon-box {
+    left: -26px;
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    top: 22px;
+  }
+
   .content-box {
     padding: 15px;
+  }
+
+  .content-box h5 {
+    font-size: 1rem;
+  }
+
+  .content-box p {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .career-tech-section h2 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .section-heading {
+  color: #00c6ff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+
+  .timeline-item {
+    padding-left: 30px;
+  }
+
+  .icon-box {
+    left: -24px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
+  }
+
+  .content-box h5 {
+    font-size: 0.95rem;
+  }
+
+  .content-box p {
+    font-size: 0.85rem;
   }
 }
