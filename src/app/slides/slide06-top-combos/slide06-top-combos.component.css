@@ -2,6 +2,7 @@
   background-color: #144164;
   padding: 4rem 1.5rem;
   color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .combo-scroll-container {
@@ -23,6 +24,7 @@
   border-left: 6px solid #ffdf5e;
   scroll-snap-align: start;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  min-width: 280px;
 }
 
 .combo-card:hover {
@@ -76,4 +78,121 @@
   font-size: 1.1rem;
   font-weight: 500;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .combo-card {
+    flex: 0 0 260px;
+    min-width: 240px;
+    padding: 1.5rem;
+  }
+
+  .combo-title h5 {
+    font-size: 1.1rem;
+  }
+
+  .combo-card li {
+    font-size: 0.95rem;
+  }
+
+  .final-recommendation {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+.combo-scroll-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.combo-scroll-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1rem 0;
+  gap: 1.5rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Scroll Fade Shadows */
+.scroll-fade-left,
+.scroll-fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.scroll-fade-left {
+  left: 0;
+  background: linear-gradient(to right, #144164, transparent);
+}
+
+.scroll-fade-right {
+  right: 0;
+  background: linear-gradient(to left, #144164, transparent);
+}
+
+/* Optional: Scrollbar Styling */
+.combo-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+.combo-scroll-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+/* Subtle bounce for the first card */
+.animate-bounce:first-child {
+  animation: subtleBounce 2s ease infinite;
+}
+
+@keyframes subtleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Optional: stop bounce after few seconds using JS */
+
+/* Mobile */
+@media (max-width: 576px) {
+  .fullstack-ranking-section {
+    padding: 3rem 1rem;
+  }
+
+  .combo-card {
+    flex: 0 0 85%;
+    min-width: 240px;
+  }
+
+  .combo-title h5 {
+    font-size: 1rem;
+  }
+
+  .rating-stars {
+    font-size: 0.95rem;
+  }
+
+  .combo-card li {
+    font-size: 0.9rem;
+  }
+
+  .final-recommendation {
+    font-size: 0.95rem;
+    padding: 1.25rem;
+  }
+
+  .final-recommendation h4 {
+    font-size: 1.1rem;
+  }
 }

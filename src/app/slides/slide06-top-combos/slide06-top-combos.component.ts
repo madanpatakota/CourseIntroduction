@@ -1,11 +1,24 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
+import { registerScrollAnimations } from 'src/app/shared/utils/scroll-antimate';
 
 @Component({
   selector: 'app-slide06-top-combos',
   templateUrl: './slide06-top-combos.component.html',
   styleUrls: ['./slide06-top-combos.component.css']
 })
-export class Slide06TopCombosComponent {
+export class Slide06TopCombosComponent implements AfterViewInit {
+ constructor(private el: ElementRef) {}
+
+  ngAfterViewInit(): void {
+    registerScrollAnimations('.app-slide-wrapper', this.el.nativeElement);
+     setTimeout(() => {
+    const el = document.querySelector('.animate-bounce');
+    if (el) el.classList.remove('animate-bounce');
+  }, 5000);
+  }
+
+
+
 combos = [
   {
     title: 'ASP.NET Core + Angular',

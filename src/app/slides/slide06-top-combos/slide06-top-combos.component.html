@@ -2,6 +2,11 @@
   <div class="container">
     <h2 class="text-center text-light mb-5" data-aos="zoom-in">🚀 Top Full-Stack Combinations to Boost Your Career</h2>
 
+    <div class="combo-scroll-wrapper">
+  <!-- Left Shadow -->
+  <div class="scroll-fade-left"></div>
+
+  <!-- Scrollable Container -->
     <div class="combo-scroll-container" style="margin-bottom: 100px;">
       <div class="combo-card" *ngFor="let combo of combos" data-aos="fade-up">
         <div class="combo-header">
@@ -20,6 +25,10 @@
         </ul>
       </div>
     </div>
+    
+  <!-- Right Shadow -->
+  <div class="scroll-fade-right"></div>
+    </div>
 
     <!-- Final Recommendation -->
     <div class="final-recommendation mt-5" data-aos="zoom-in" style="margin-bottom: 150px;">
@@ -28,5 +37,5 @@
       <p class="mb-0">💡 It also provides the best support for API Development using RESTful services, Entity Framework, and Azure integration — trusted by Fortune 500 companies.</p>
     </div>
   </div>
-  <app-slide-nav  [backRoute]="'slide-5'" [FrontRoute]="'slide-7'"></app-slide-nav>
 </section>
+  <app-slide-nav  [backRoute]="'slide-5'" [FrontRoute]="'slide-7'"></app-slide-nav>
