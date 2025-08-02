@@ -1,18 +1,20 @@
 <!-- internship.component.html -->
-<div class="container py-5" data-aos="fade-up">
-  <h2 class="text-center fw-bold text-danger mb-5">💼 Internship + Real-Time Client Work</h2>
-  <div class="row justify-content-center">
-    <div class="col-lg-8">
-      <div class="timeline">
-        <div class="timeline-block" *ngFor="let step of stages" data-aos="fade-up">
-          <div class="timeline-icon bg-primary text-white rounded-circle">{{ step.icon }}</div>
-          <div class="timeline-content shadow-sm bg-light rounded-4 p-4">
-            <h5 class="fw-bold text-primary">{{ step.title }}</h5>
-            <p class="mb-0">{{ step.desc }}</p>
+<section class="internship-section" data-aos="fade-up">
+  <div class="container">
+    <h2>💼 Internship + Real-Time Client Work</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="timeline">
+          <div class="timeline-block" *ngFor="let step of stages" data-aos="fade-up">
+            <div class="timeline-icon">{{ step.icon }}</div>
+            <div class="timeline-content">
+              <h5>{{ step.title }}</h5>
+              <p>{{ step.desc }}</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <app-slide-nav [backRoute]="'slide-19'" [FrontRoute]="'slide-21'"></app-slide-nav>
   </div>
-  <app-slide-nav  [backRoute]="'slide-19'" [FrontRoute]="'slide-21'"></app-slide-nav>
-</div>
+</section>
