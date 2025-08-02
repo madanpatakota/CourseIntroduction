@@ -1,25 +1,24 @@
 .tech-learn-slide {
   background: linear-gradient(to right, #0d3056, #144164);
-  padding: 80px 40px;
+  padding: 80px 20px;
   font-family: 'Segoe UI', sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
 }
 
 .slide-heading {
   font-size: 2.8rem;
   font-weight: bold;
-  color: white;
+  color: #fff;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .slide-subtitle {
   font-size: 1.1rem;
-  color: white;
+  color: #fff;
   margin-bottom: 40px;
   text-align: center;
   max-width: 800px;
@@ -29,20 +28,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
   gap: 30px;
   width: 100%;
   max-width: 1300px;
-  padding: 0 10px;
 }
 
 .tech-card {
-  background: white;
+  background: #fff;
   border-radius: 16px;
   padding: 30px 20px;
-  width: 250px;
+  flex: 1 1 250px;
+  max-width: 300px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .tech-card:hover {
@@ -74,8 +73,61 @@
   line-height: 1.4;
 }
 
-@media (max-width: 768px) {
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .slide-heading {
+    font-size: 2.2rem;
+  }
+
+  .slide-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .tech-grid {
+    gap: 25px;
+  }
+
+  .tech-card {
+    flex: 1 1 45%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-learn-slide {
+    padding: 60px 10px;
+  }
+
+  .slide-heading {
+    font-size: 1.8rem;
+  }
+
+  .slide-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .tech-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
   .tech-card {
     width: 100%;
+    max-width: 100%;
+    padding: 24px 15px;
+  }
+
+  .tech-card .icon {
+    font-size: 2rem;
+  }
+
+  .tech-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .tech-card p {
+    font-size: 0.88rem;
   }
 }
